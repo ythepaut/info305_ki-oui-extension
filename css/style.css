@@ -1,0 +1,203 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+a, a:hover, a:visited, a:active {
+	text-decoration: none;
+}
+a.link {
+    color: #3498db;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background: #10ac84;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0e9674;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #128568;
+}
+body {
+    overflow-y: scroll;
+    width: 400px;
+}
+
+
+/* Header */
+
+nav {
+	background-color: #10ac84;
+	color: #fff;
+}
+
+nav .title {
+    font-size: 26px;
+}
+
+nav > div {
+    text-align: center;
+}
+
+nav form {
+    text-align: center;
+    display: initial !important;
+}
+
+nav form > a {
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,0.2);
+    color: #fff;
+    background: rgba(255,255,255,0.17);
+    padding: 0px 15px;
+	height: 44px;
+	margin: 5px;
+    display: inline-block;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.30s;
+    font-weight: bold;
+}
+
+nav form > a:hover {
+    background: rgba(255,255,255,0.28);
+}
+
+nav form > a > span {
+	position: relative;
+	top: 9px;
+	width: fit-content;
+	font-size: 15px;
+}
+
+
+/* Icones */
+
+i.info {
+    color: #2e86de;
+}
+
+i.success {
+    color: #10ac84;
+}
+
+i.warning {
+    color: #ff9f43;
+}
+
+i.error {
+    color: #ee5253;
+}
+
+
+i.enabled {
+    color: #10ac84;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+i.enabled:hover {
+    color: #ee5253;
+}
+
+i.disabled {
+    color: #ee5253;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+i.disabled:hover {
+    color: #10ac84;
+}
+
+
+i.sort.active {
+    color: #2e86de;
+    cursor: pointer;
+}
+i.sort {
+    color: #222f3e;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+i.sort:hover:not(.active) {
+    color: #111;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+i.edit {
+    color: #54a0ff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+i.edit:hover {
+    color: #2e86de;
+}
+
+i.delete {
+    color: #ff6b6b;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+i.delete:hover {
+    color: #ee5253;
+}
+
+
+/* Boutons */
+
+a.button {
+    margin: 10px 0px;
+}
+
+
+button:not(.close), input[type="submit"], a.button {
+	color: #fff;
+	background-color: #1dd1a1;
+	border: none;
+	border-radius: 0.25rem;
+	box-shadow: inset 0 -3px 0 rgba(0,0,0,0.2);
+    padding: 12px 15px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom: 10px;
+	transition: all 0.30s;
+	cursor: pointer;
+}
+
+button:hover:not(.close), button:active:not(.close), input[type="submit"]:hover, a.button:hover {
+	background-color: #5adfbb;
+}
+
+button:active:not(.close), input[type="submit"]:active, a.button:active {
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+button:disabled:not(.close), input[type="submit"]:disabled, a.button:disabled {
+	background-color: #c8d6e5;
+	color: #222f3e;
+	cursor: not-allowed;
+}
+
+.btn-group > button:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-group:not(:last-child) > button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.btn-group > button, .btn-group-vertical > button {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
