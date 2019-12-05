@@ -80,6 +80,29 @@ nav form > a > span {
 	font-size: 15px;
 }
 
+div.alert {
+	border-radius: .10rem;
+	font-size: 15px;
+	margin-top: 10px;
+	padding: 5px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    border-left: solid 4px #34495e;
+}
+
+div.alert.alert-warning {
+    border-left: solid 4px #e74c3c;
+}
+.alert-warning i {
+    color: #e74c3c;
+}
+
+div.alert.alert-success {
+    border-left: solid 4px #2ecc71;
+}
+.alert-success i {
+    color: #2ecc71;
+}
+
 
 /* Icones */
 
