@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Extension KI-OUI</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    </head>
+    <body>
+
+        <div class="container-fluid" style="text-align: center;">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h4 class="modal-title">CONNEXION</h4>
+            </div>
+
+            <br />
+            
+            <div class="col-lg-2">
+
+            </div>
+
+            <div class="col-lg-8">
+
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text label-icon" id="icon_login_email"><i class="fas fa-at"></i></span>
+                        </div>
+                        <input type="email" name="login_email" class="form-control" placeholder="Adresse e-mail" aria-describedby="icon_login_email" required value="admin@ythepaut.com" />
+                    </div>
+                    
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text label-icon" id="icon_login_passwd"><i class="fas fa-unlock"></i></span>
+                        </div>
+                        <input type="password" name="login_passwd" class="form-control" placeholder="Mot de passe" aria-describedby="icon_login_passwd" required value="b7c97eg56nm" />
+                    </div>
+
+
+
+                    <input type="hidden" name="login_duration" value="86400">
+                    <input type="hidden" name="action" value="auth">
+                    <button type="button" id="authBtn">Valider</button>
+
+
+            </div>
+
+            <div class="col-lg-2">
+
+            </div>
+
+
+            <div class="col-lg-12">
+
+                <div style="display: none;" id="hint"></div>
+                <br />
+                
+            </div>
+
+        
+        </div>
+        </div>
+
+
+        <!--Ajax-->
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+
+        <!--FontAwesome-->
+        <script src="./js/fontawesome.js"></script>
+
+        <!--Bootstrap-->
+        <script src="./js/bootstrap.js"></script>
+
+        <!--Main-->
+        <script src="./js/main.js"></script>
+
+    
+    </body>
+</html>
