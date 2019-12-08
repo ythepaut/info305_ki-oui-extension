@@ -4,6 +4,9 @@
     "name": "KI-OUI",
     "description": "Extension de l'outil de partage de fichiers KI-OUI",
     "version": "1.0",
+    "permissions": [
+        "storage"
+    ],
     "icons": {
         "128": "icones/favicon.png",
         "48": "icones/favicon.png",
